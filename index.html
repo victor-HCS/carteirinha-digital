@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteirinha</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div id="upload-area" class="card shadow">
+      <h2>Adicionar sua carteirinha</h2>
+      <p>Faça upload de um arquivo JPG</p>
+      <input type="file" id="fileInput" accept="image/jpeg">
+    </div>
+
+    <div id="card-area" class="card shadow hidden">
+      <img id="cardImage" alt="Carteirinha">
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
