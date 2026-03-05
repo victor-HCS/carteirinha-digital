@@ -1,87 +1,60 @@
 /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #fff;
 }
 
 .container {
-  width: 90%;
-  max-width: 400px;
-}
-
-/* Cartão estilo app */
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  background: white;
+  width: 95%;
+  max-width: 500px;
   padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
   text-align: center;
-  margin: 10px 0;
-  backdrop-filter: blur(10px);
+  color: #1e3c72;
 }
 
-.card h2 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-  color: #ddd;
-}
-
-/* Input estilo botão */
-input[type="file"] {
-  padding: 10px;
+input, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
   border-radius: 8px;
   border: none;
-  background-color: #fff;
-  color: #333;
+}
+
+button {
+  background: #1e3c72;
+  color: white;
   font-weight: bold;
+}
+
+#documentList {
+  margin-top: 20px;
+}
+
+.doc-item {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+#viewer {
+  margin-top: 20px;
+}
+
+#viewer img,
+#viewer iframe {
   width: 100%;
-  transition: background 0.3s;
-}
-
-input[type="file"]:hover {
-  background-color: #f0f0f0;
-}
-
-/* Carteirinha exibida */
-#cardImage {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-}
-
-/* Esconder elementos */
-.hidden {
-  display: none;
-}
-
-/* Sombra leve */
-.shadow {
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-/* Responsivo: centralizar e ajustar tamanho */
-@media (max-width: 500px) {
-  .card {
-    padding: 15px;
-  }
-
-  input[type="file"] {
-    font-size: 0.9rem;
-  }
+  border-radius: 10px;
 }
